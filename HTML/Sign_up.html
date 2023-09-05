@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+    <link rel="icon" type="image/x-icon" href="images/favion.gif">
+</head>
+<body>
+    <h1 style="text-align: center;">E-commerce website<br>Login Page</h1>
+    <br>
+    <hr>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="min 6 characters" minlength="6characters" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="blah@gmail.com" required><br><br>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10digits"><br><br>
+        
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        
+        <label>Gender:</label>
+        <label for="male">
+            <input type="radio" id="male" name="gender" value="male"> Male
+        </label>
+        <label for="female">
+            <input type="radio" id="female" name="gender" value="female"> Female
+        </label>
+        <label for="other">
+            <input type="radio" id="other" name="gender" value="other"> Other
+        </label><br><br>
+        
+        <button type="reset">Reset</button>
+        <button type="submit">Register</button>
+    </form>
+</body>
+<footer>
+    <br>
+    <br>
+    <br>
+    <a href="first_page.html">
+        <p style="text-align: right;"><button class="Redirect">Redirect to home page</button></p>
+    </a>
+</footer>
+</html>

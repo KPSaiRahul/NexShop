@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favion.gif">
+    <title>E-Commerce Checkout</title>
+    <link rel="stylesheet" href="./address.css">
+</head>
+<body>
+    <div id="banner"> 
+        <h1>Check-Out</h1>
+    </div>
+    <main> 
+        <div id="container">
+            <div id="progressbardiv">
+                <ul class="progressbar">
+                    <li class="active">Address</li>
+                    <li>Payment</li>
+                    <li >Confirmed</li>
+                  </ul>
+                  </div>
+                </div>
+        <div id="address-area">
+            <div id="inner">
+            <h2>Enter Delivery Address:</h2>
+        <form>
+            <div id="text-area">
+            <label for="fname">Full name :</label>
+            <input type="text" id="fname" name="fname" placeholder="e.g. Joe Thomas"><br><br>
+            <label for="line1">Line 1 :</label>
+            <input type="text" id="line1" name="line1" placeholder="Address Line 1"><br><br>
+            <label for="line2">Line 2 :</label>
+            <input type="text" id="line2" name="line2" placeholder="Address Line 2"><br><br>
+            <label for="city">City :</label>
+            <input type="text" id="city" name="city" placeholder="City"><br><br>
+            <label for="state">State :</label>
+            <input type="text" id="state" name="state" placeholder="State"><br><br>
+            <label for="pincode">Pincode :</label>
+            <input type="text" id="pincode" name="pincode" placeholder="Pincode"><br><br>
+            <label for="country">Country :</label>
+            <input type="text" id="country" name="country" placeholder="Country">
+            <br><br>
+            </div>
+            <button class="button btn-sm" type="reset" value="Reset">Reset</button>
+            <button class="button btn-sm" type="submit" value="submit">Save</button>
+        </form>
+        <br>
+        <section id="select-address">
+            <select class="address">
+                <option value="default">Select from saved addresses</option>
+                <option value="address2">123-Vellore</option>
+                <option value="address2">456-Delhi</option>
+            </select>
+            <br><br>
+            <a " href="https://www.google.com/maps/">
+                <button class="button btn-map">Select the address from  maps</button>
+            </a>
+        </div>
+        </div>
+            <br><br>
+            <div id="butdiv">
+            <button class="button btn-prev" onclick="window.location.href='Add_to_cart.html';">
+                Go back to cart
+              </button>
+            <button class="button btn-next" onclick="window.location.href='Payment.html';">
+                Make payment
+              </button>
+              </div>
+        </section>
+    </main>
+</body>
+</html>

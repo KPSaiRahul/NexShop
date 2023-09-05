@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favion.gif">
+    <title>E-Commerce Checkout</title>
+    <link rel="stylesheet" href="./payment.css">
+</head> 
+<body>
+        <div id="banner">
+        <header>
+        <h1>Pay Invoice</h1>
+        </header>
+        </div>
+    <main>
+        <div id="container">
+        <div id="progressbardiv">
+            <ul class="progressbar">
+                <li >Address</li>
+                <li class="active">Payment</li>
+                <li >Confirmed</li>
+              </ul>
+              </div>
+            </div>
+    <div id="select-payment">
+        <div id="inner">
+            <h2>Select Payment Method</h2>
+            <label>
+                <input type="radio" name="payment" value="credit-card" checked> Credit Card
+            </label>
+            <label>
+                <input type="radio" name="payment" value="debit-card"> Debit card
+            </label>
+            <label>
+                <input type="radio" name="payment" value="paypal"> PayPal
+            </label>
+            <label>
+                <input type="radio" name="payment" value="UPI"> UPI
+            </label>
+            <h3>Credit Card Details</h3>
+            <div id="banking-details">
+                <label for="card-number">Card Number<br></label>
+                <input type="text" id="card-number" name="card-number" placeholder="Enter the 16 digit number"><br>
+                <br>
+                <label for="card-name">Name on Card<br></label>
+                <input type="text" id="card-name" name="card-name" placeholder="Name" required><br>
+                <br>
+                <label for="expiry">Expiry Date<br></label>
+                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required><br>
+                <br>
+                <label for="cvv">CVV<br></label>
+                <input type="password" id="cvv" name="cvv" placeholder="Enter the 3 digit code" required><br>
+            </div>
+            <br>
+
+        </div>
+    </div>
+    <div id="butdiv">
+        <button class="button btn-prev" onclick="window.location.href='Address.html';">
+            Edit Delivery Address
+          </button>
+        <button class="button btn-next" onclick="window.location.href='Items and delivery.html';">
+            Confirm Order
+          </button>
+          </div>
+</main>
+</body>
+</html>

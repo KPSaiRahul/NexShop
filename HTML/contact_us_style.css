@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(circle at 50px 50px, #333 5px, #f0f0f0 10px);
+  background-size: 50px 50px;
+  background-color: #999; /* Grey background color */
+  }
+  
+  header {
+    background-color: #232f3e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .contact-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.9); /* Glassmorphism background */
+  
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+    
+  }
+
+
+
+.contact-container::after {
+  content: "";
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNyX4rkHsTnny_c_pTfHaHfgtvdgmfC4-iUw&usqp=CAU'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  filter: blur(5px);
+  opacity: 100.0;
+}
+
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .home-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: rgb(246, 15, 15);
+    transition: background-color 0.3s ease;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .home-button:hover {
+    background-color: #999;
+  }
